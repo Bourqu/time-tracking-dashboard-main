@@ -1,14 +1,8 @@
-import { useState } from "react";
+import React from "react";
 
-
-
-export default function Profile() {
-    const [option, setOption] = useState("daily")
-
-    const handleLinkClick = (selectedOption) => {setOption(selectedOption)}
-
-
-
+export default function Profile({ selectedStatus, onStatusChange }) {
+    const statusOptions = ["daily", "weekly", "monthly"];
+    
     return (
         <div className="profile">
             <div className="upper">
@@ -18,41 +12,18 @@ export default function Profile() {
                 <h1>Jeremy<br></br>Robson</h1>
             </div>
             <div className="lower">
-              <p>
-          <a
-            href="#"
-            style={{
-              color: option === "daily" ? "white" : "inherit"
-            }}
-            onClick={() => handleLinkClick("daily")}
-          >
-            Daily
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-            style={{
-              color: option === "weekly" ? "white" : "inherit"
-            }}
-            onClick={() => handleLinkClick("weekly")}
-          >
-            Weekly
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-            style={{
-              color: option === "monthly" ? "white" : "inherit"
-            }}
-            onClick={() => handleLinkClick("monthly")}
-          >
-            Monthly
-          </a>
-        </p>
-      </div>
-    </div>
-  );
-
+                {statusOptions.map((status) => (
+                    <p key={status}>
+                        <a
+                            href="#"
+                            onClick={() => onStatusChange(status)}
+                            className={selectedStatus === status ? "selected" : ""}
+                        >
+                            {status.charAt(0).toUpperCase() + status.slice(1)}
+                        </a>
+                    </p>
+                ))}
+            </div>
+        </div>
+    );
 }

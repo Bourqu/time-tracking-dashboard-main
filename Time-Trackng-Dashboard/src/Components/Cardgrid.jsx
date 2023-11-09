@@ -1,18 +1,19 @@
 import { useState } from "react";
 import Card from "./Card"
+import data from '../assets/data.json'
 
-export default function CardGrid() {
+export default function CardGrid(selectedStatus) {
 
-    const categories = ["Work", "Play", "Study", "Exercise", "Social", "Self-Care"]
-
+   
 
 
     return (
         <div className="Cardgrid">
 
-            {categories.map((category) => (
+            {data.map((category) => (
 
-                <Card key={category} category={category} backgroundColor={"var(--" + category + ")"} />))}
+
+                <Card key={category.title} category={category.title} backgroundColor={"var(--" + category.title + ")"} data={category} selectedStatus={selectedStatus} />))}
 
         </div>
 
