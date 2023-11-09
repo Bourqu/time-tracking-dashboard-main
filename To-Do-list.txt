@@ -1,0 +1,11 @@
+#convert style guide to CSS variables and selectors
+
+#create the main straucture
+
+#work on the profile in left
+
+
+#work on the category card
+
+#generate with a for each loop each option
+
