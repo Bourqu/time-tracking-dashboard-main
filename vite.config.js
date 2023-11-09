@@ -8,6 +8,6 @@ export default defineConfig({
     globals:true,
     environment:'jsdom',
     setupFiles: './tests/setup.js',
-    base:'/time-tracking-dashboard-main/'
+    base:'https://bourqu.github.io/time-tracking-dashboard-main/'
   }
 })
