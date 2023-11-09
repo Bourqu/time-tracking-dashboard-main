@@ -1,15 +1,15 @@
 import React from "react";
-import profile from './src/assets/image-jeremy.png'
+import profileImage from './../assets/image-jeremy.png'
 
 export default function Profile({ selectedStatus, onStatusChange }) {
     const statusOptions = ["daily", "weekly", "monthly"];
 
-    const profile = profile
+
 
     return (
         <div className="profile">
             <div className="upper">
-                <img src={profile} alt="" />
+                <img src={profileImage} alt="" />
                 <br />
                 <p>Report for</p>
                 <h1>Jeremy<br></br>Robson</h1>
