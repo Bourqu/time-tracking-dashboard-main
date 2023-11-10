@@ -15,7 +15,7 @@ export default function Card({ category, backgroundColor, data, selectedStatus }
 
     return (
         <div className="Card" style={cardStyle}>
-            <img className="icon" src={`./icon-${category.toLowerCase()}.svg`} />
+            <img className="icon" src={`/icon-${category.toLowerCase()}.svg`} />
             <div className="inner-card">
                 <div>
                     <p>{category}</p>
