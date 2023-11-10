@@ -18,7 +18,7 @@ export default function Profile({ selectedStatus, onStatusChange }) {
                 {statusOptions.map((status) => (
                     <p key={status}>
                         <a
-                            href=""
+                            href="#"
                             onClick={() => onStatusChange(status)}
                             className={selectedStatus === status ? "selected" : ""}
                         >
