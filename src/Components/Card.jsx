@@ -15,11 +15,11 @@ export default function Card({ category, backgroundColor, data, selectedStatus }
 
     return (
         <div className="Card" style={cardStyle}>
-            <img className="icon" src={`./assets/icon-${category.toLowerCase()}.svg`} />
+            <img className="icon" src={`./icon-${category.toLowerCase()}.svg`} />
             <div className="inner-card">
                 <div>
                     <p>{category}</p>
-                    <img src="./src/assets/icon-ellipsis.svg" alt="" />
+                    <img src="./icon-ellipsis.svg" alt="" />
                 </div>
                 <h1>{hours} hrs</h1>
                 <p>Previous Period: {previous}</p>
