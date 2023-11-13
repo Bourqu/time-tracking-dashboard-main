@@ -3,7 +3,7 @@
 
 /* Layout */
 body {
-  max-width: 1440px;
+
   margin: 0 auto;
   padding: 20px;
 }
@@ -124,10 +124,14 @@ body {
   padding: 0.5em;
   display: inline-block;
   border-radius: 4.25%;
-  margin-top: 3em; /* Adjust the margin-top as needed */
-  width: 95%; /* Adjust the width as needed to control the width of the inner card */
-  position: relative; /* Add relative positioning to the inner card */
-  z-index: 1; /* Ensure the inner card is on top */
+  margin-top: 3em;
+  /* Adjust the margin-top as needed */
+  width: 95%;
+  /* Adjust the width as needed to control the width of the inner card */
+  position: relative;
+  /* Add relative positioning to the inner card */
+  z-index: 1;
+  /* Ensure the inner card is on top */
 }
 
 
